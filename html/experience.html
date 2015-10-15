@@ -1,0 +1,28 @@
+<div class="section scrollspy" id="work">
+    <div class="header">
+        <div class="header-content">
+            <h4>Experience</h4>
+        </div>
+    </div>
+
+    <div class="content">
+        <ul class="collection z-depth-1">
+            <li class="collection-item" ng-repeat="job in workCtrl.jobs">
+                <div class="right right-align">
+                <p class="grey-text">{{job.dates}}</p>
+                <img ng-if="job.img" ng-src="/img/work/{{job.img}}"
+                    ng-class="job.imgclass" width="60px" height="60px"/>
+                </div>
+                <h5><a ng-href="{{job.url}}">{{job.employer}}</a></h5>
+                <h6 class="grey-text">{{job.title}} | {{job.location}}</h6>
+                <ul>
+                    <li ng-repeat="desc in job.description" style="padding: 5px;">
+                        <i class="material-icons tiny">remove</i>&nbsp;
+                        {{desc}}
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</div>

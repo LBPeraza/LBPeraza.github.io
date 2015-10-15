@@ -1,0 +1,16 @@
+<div>
+    <button class="btn" ng-click="galleryCtrl.openModal()" style="cursor: pointer;">
+        Project Gallery
+    </button>
+    <div class="modal" ng-attr-id="{{galleryCtrl.name}}-gallery">
+        <div class="modal-content">
+            <div ng-repeat="img in gallery.imgs">
+                <div class="container">
+                    <img ng-src="/dev/img/projects/{{img.src}}.png" class="responsive-img center-align">
+                    <p class="flow-text center-align">{{img.caption}}</p>
+                </div>
+                <div class="divider" ng-hide="$last" style="margin-bottom: 20px;"></div>
+            </div>
+        </div>
+    </div>
+</div>

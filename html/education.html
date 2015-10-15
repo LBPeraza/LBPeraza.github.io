@@ -1,0 +1,56 @@
+<div class="section scrollspy" id="edu">
+    <div class="header">
+        <div class="header-content">
+            <h4>Education</h4>
+        </div>
+    </div>
+
+    <div class="education-list">
+        <div class="entry" ng-repeat="inst in eduCtrl.institutions">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <img class="z-depth-1" ng-src="/img/education/{{inst.img}}" width="100px" height="100px" ng-class="inst.imgClass">
+                </div>
+                <div class="col s12 center-align">
+                    <h5><a ng-href="{{inst.url}}">{{inst.institution}}</a></h5>
+                </div>
+                <div class="col s12 center-align">
+                    <div class="info">
+                        <div style="font-size: 21px;">{{inst.dates}}</div>
+                        <div ng-repeat="d in inst.deg" class="deg">{{d}}</div>
+                    </div>
+                </div>
+                <div class="col s12 courses" ng-show="inst.courses.length">
+                    <div class="row">
+                        <div class="col s4 m3 l2">
+                            <h6>Courses:</h6>
+                            <ul class="collection">
+                                <li class="collection-item"
+                                    ng-repeat="course in inst.courses" 
+                                    ng-class="eduCtrl.isActive($index, inst)"
+                                    ng-click="eduCtrl.setActive($index, inst)">
+                                    {{course.number}}
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col s8 m9 l10">
+                            <h6>Course Description:</h6>
+                            <div class="course-desc white">
+                                <div ng-repeat="course in inst.courses"
+                                    ng-class="eduCtrl.isActive($index, inst)">
+                                    <p class="course-date right">{{course.date}}</p>
+                                    <h6>{{course.number}}: {{course.name}}</h6>
+                                    <p ng-repeat="desc in course.details">
+                                        {{desc}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider" ng-hide="$last"></div>
+        </div>
+    </div>
+
+</div>

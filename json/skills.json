@@ -1,0 +1,97 @@
+[
+    {
+        "level": "Advanced",
+        "skills": [
+            {
+                "name": "Python",
+                "img": "python.png"
+            },
+            {
+                "name": "C",
+                "img": "c.png"
+            },
+            {
+                "name": "HTML 5",
+                "img": "html5.png"
+            },
+            {
+                "name": "CSS 3",
+                "img": "css3.png"
+            },
+            {
+                "name": "Javascript",
+                "img": "javascript.png"
+            }
+        ]
+    },
+    {
+        "level": "Experienced",
+        "skills": [
+            {
+                "name": "Sass",
+                "img": "sass.png"
+            },
+            {
+                "name": "jQuery",
+                "img": "jquery.png"
+            },
+            {
+                "name": "React",
+                "img": "react.png"
+            },
+            {
+                "name": "AngularJS",
+                "img": "angular.png"
+            },
+            {
+                "name": "Standard ML",
+                "img": "sml.png"
+            },
+            {
+                "name": "LaTeX",
+                "img": "latex.png"
+            }
+        ]
+    },
+    {
+        "level": "Familiar",
+        "skills": [
+            {
+                "name": "PHP",
+                "img": "php.png"
+            },
+            {
+                "name": "MySQL",
+                "img": "mysql.png"
+            },
+            {
+                "name": "PostgreSQL",
+                "img": "postgres.svg.png"
+            },
+            {
+                "name": "Flask",
+                "img": "flask.png"
+            },
+            {
+                "name": "Android",
+                "img": "android.png"
+            },
+            {
+                "name": "Git",
+                "img": "git.png"
+            },
+            {
+                "name": "Haskell",
+                "img": "haskell.png"
+            },
+            {
+                "name": "Java",
+                "img": "java.png"
+            },
+            {
+                "name": "MATLAB",
+                "img": "matlab.png"
+            }
+        ]
+    }
+]

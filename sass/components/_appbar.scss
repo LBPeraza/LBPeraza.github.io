@@ -1,0 +1,29 @@
+
+nav {
+    background: rgba(0, 0, 0, 0) !important;
+    @extend .z-depth-0;
+
+    .nav-wrapper {
+        background: $primary-color;
+    }
+
+    z-index: -1;
+}
+
+.toolbar-fixed {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+
+    .nav-wrapper {
+        position: relative;
+        @extend .z-depth-2;
+        @include transition(0.2s);
+        top: 0;
+    }
+
+    &.toolbar-receded .nav-wrapper {
+        top: -150%;
+        @include transition(0.2s);
+    }
+}

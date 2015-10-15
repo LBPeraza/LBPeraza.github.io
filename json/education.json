@@ -1,0 +1,80 @@
+[
+    {
+        "institution": "Carnegie Mellon University",
+        "img": "cmu.png",
+        "imgClass": "circle",
+        "url": "http://www.cmu.edu",
+        "dates": "2013-2017",
+        "deg": ["B.S. Computer Science", "Additional Major in Robotics"],
+        "activeCourse": 0,
+        "courses": [
+            {
+                "number": "15-462",
+                "name": "Computer Graphics",
+                "date": "Spring 2015",
+                "details": [
+                    "A comprehensive introduction to computer graphics modeling, animation, and rendering.",
+                    "As part of the course, I implemented loop subdivision and created both a raytracer and a physics simulator.",
+                    "Language used: C++"
+                ]
+            },
+            {
+                "number": "16-311",
+                "name": "Introduction to Robotics",
+                "date": "Spring 2015",
+                "details": [
+                    "An overview of robotics, with topics such as vision, motion planning, and forward and inverse kinematics.",
+                    "As part of a team of 3, I used a Lego NXT kit to solve problems like Dead Reckoning, Trajectory Following, and Urban Search and Rescue (USAR). My team won both competitions held in our semester - USAR and the student-defined Predator and Prey competition.",
+                    "Languages used: C, MATLAB, RobotC"
+                ]
+            },
+            {
+                "number": "15-251",
+                "name": "Great Theoretical Ideas in Computer Science",
+                "date": "Fall 2015",
+                "details": [
+                    "A course about how to use theoretical ideas to formulate and solve problems in computer science, integrating mathematical material with general problem solving techniques and computer science applications.",
+                    "Examples are drawn from algorithms, complexity theory, game theory, probability theory, graph theory, automata theory, algebra, cryptography, and combinatorics."
+                ]
+            },
+            {
+                "number": "15-213",
+                "name": "Introduction to Computer Systems",
+                "date": "Fall 2014",
+                "details": [
+                    "A programmer's view of how computer systems operate. Topics include machine-level code, memory organization, networking technology, and concurrency.",
+                    "As part of the course, I created a cache simulator, a shell, a multi-threaded proxy server, and my own implementation of malloc.",
+                    "Language used: C"
+                ]
+            },
+            {
+                "number": "15-210",
+                "name": "Parallel and Sequential Data Structures and Algorithms",
+                "date": "Fall 2015",
+                "details": [
+                    "A course which teaches students about how to design, analyze, and program algorithms and data structures.",
+                    "The course emphasizes parallel algorithms and analysis, and how sequential algorithms can be considered a special case.",
+                    "Language used: SML"
+                ]
+            },
+            {
+                "number": "15-150",
+                "name": "Principles of Functional Programming",
+                "date": "Spring 2015",
+                "details": [
+                    "An introduction to programming focused on the concepts of function and type. A major them is the interplay between inductive types, recursive functions, and proof by structrual induction.",
+                    "Language used: SML"
+                ]
+            },
+            {
+                "number": "15-112",
+                "name": "Fundamentals of Programming and Computer Science",
+                "date": "Fall 2013",
+                "details": [
+                    "A fast-paced technical introduction to the fundamentals of computer science.",
+                    "Language used: Python"
+                ]
+            }
+        ]
+    }
+]

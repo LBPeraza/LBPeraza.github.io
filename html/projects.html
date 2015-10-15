@@ -1,0 +1,27 @@
+<div class="section scrollspy" id="proj">
+    <div class="header">
+        <div class="header-content">
+            <h4>Projects</h4>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="z-depth-1" style="margin-top: 7.5px; margin-bottom: 15px;">
+        <div ng-repeat="project in projCtrl.projects" class="white">
+                <div style="padding: 10px 20px 10px 14px;" ng-style="projCtrl.brColor(project.color)">
+                    <p class="grey-text right">{{project.dates}}</p>
+                    <h5>{{project.name}}</h5>
+                    <ul>
+                        <li ng-repeat="desc in project.description" style="padding: 5px">
+                            <i class="material-icons tiny" ng-style="projCtrl.makeTextColor(project.color)">remove</i>
+                            &nbsp;{{desc}}
+                        </li>
+                    </ul>
+                    <gallery ng-if="project.imgs" gallery="project"></gallery>
+                </div>
+                <div class="divider"></div>
+        </div>
+        </div>
+    </div>
+
+</div>

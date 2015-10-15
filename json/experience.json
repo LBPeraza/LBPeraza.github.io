@@ -1,0 +1,26 @@
+[
+    {
+        "employer": "CodoniX",
+        "url": "http://www.codonix.com",
+        "title": "Software Engineer Intern",
+        "dates": "June - August 2015",
+        "location": "Potomac, MD",
+        "description": [
+            "Created servlets and web interfaces for internal management of medical reports",
+            "Wrote servlets in Java and interfaces in Javascript with the React library"
+        ]
+    },
+    {
+        "employer": "15-112: Fundamentals of Programming and Computer Science",
+        "url": "http://www.cs.cmu.edu/~112",
+        "title": "Course Assistant",
+        "dates": "January 2014 - Present",
+        "location": "Pittsburgh, PA",
+        "img": "112-dragon.png",
+        "imgclass": "circle",
+        "description": [
+            "Lead recitation, hold office hours and personal tutoring sessions",
+            "Part of Brython (Browser Python) integration team. Developed tools and modules for ease of use by beginning programmers"
+        ]
+    }
+]

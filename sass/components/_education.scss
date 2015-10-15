@@ -1,0 +1,73 @@
+
+.education-list {
+    @extend .container;
+
+    .entry {
+        padding: 10px;
+        
+        h5 {
+            margin: 0;
+            height: 100px;
+            line-height: 100px;
+        }
+
+        h6 {
+            font-size: 1.3rem;
+        }
+
+        .collection {
+            @extend .z-depth-1;
+
+            .collection-item {
+                @include transition(0.15s);
+
+                span {
+                    height: 100%;
+                    line-height: 100%;
+                }
+
+                cursor: pointer;
+
+                &:hover:not(.active) {
+                    background-color: color("grey", "lighten-4");
+                }
+            }
+        }
+
+        .course-desc {
+            @extend .white;
+            @extend .z-depth-1;
+
+            overflow-y: scroll;
+
+            div {
+
+                $margin: 16px;
+                width: calc(100% - 32px);
+                position: relative;
+                left: $margin;
+                top: $margin;
+
+                @include transition(0.15s);
+
+                h6 {
+                    margin-top: 0;
+                    font-weight: 400;
+                }
+
+                .course-date {
+                    @extend .right-align;
+                    color: $secondary-color;
+                }
+
+                &:not(.active) {
+                    height: 0;
+                    overflow: hidden;
+                }
+                &.active {
+                    min-height: 100px;
+                }
+            }
+        }
+    }
+}
