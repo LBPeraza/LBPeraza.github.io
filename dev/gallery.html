@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lukas Peraza</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body ng-app="project-gallery">
+    <div ng-controller="GalleryTester as galleryTestCtrl">
+        <ul>
+            <li ng-repeat="gallery in galleryTestCtrl.galleries">
+                <gallery gallery="gallery">
+                </gallery>
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="/dev/js/gallery.js"></script>
+    <script src="/dev/js/httpNoCache.js"></script>
+</body>

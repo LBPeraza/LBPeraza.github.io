@@ -1,0 +1,21 @@
+
+<div class="side-nav fixed hide-on-med-and-down" style="width: 240px;">
+<ul class="section table-of-contents">
+    <li ng-repeat="section in sections.sections">
+        <a ng-href="#{{section.href}}">
+            <i class="material-icons left" ng-class="section.iColor" style="height: 64px; line-height: 64px;">{{section.icon}}</i>
+            {{section.name}}
+        </a>
+    </li>
+</ul>
+</div>
+
+<div class="side-nav fixed hide-on-large-only">
+<ul>
+    <li ng-repeat="section in sections.sections">
+        <a style="height: 20vh; line-height: 20vh;" ng-href="#{{section.href}}">
+            <i class="material-icons center-align" ng-class="section.iColor" style="height: 20vh; line-height: 20vh;">{{section.icon}}</i>
+        </a>
+    </li>
+</ul>
+</div>

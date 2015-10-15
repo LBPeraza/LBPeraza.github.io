@@ -1,0 +1,54 @@
+[
+    {
+        "name": "Food Pantry Volunteer Log",
+        "dates": "June - July 2015",
+        "color": "#673ab7",
+        "description": [
+            "Web log-in system for volunteers at the local food pantry",
+            "Administrative page with monthly, yearly, and per-volunteer reports",
+            "Written in PHP with a MySQL database and a React frontend"
+        ],
+        "modalName": "vol-log",
+        "imgs": [
+            {"src": "volunteer-login", "caption": "Log-in page"},
+            {"src": "volunteer-clock", "caption": "Material time selector which I created with jQuery and SCSS"},
+            {"src": "volunteer-admin", "caption": "Administrator's view. Allows for editing volunteer info, adding new volunteers, etc."},
+            {"src": "volunteer-table", "caption": "Example yearly report"}
+        ]
+    },
+    {
+        "name": "Raytracer",
+        "dates": "February - March 2015",
+        "color": "#ff9800",
+        "description": [
+            "Written for 15-462: Computer Graphics",
+            "Implemented depth of field, diffuse reflections, and bounding volume hierarchies on top of basic requirements",
+            "Written in C++"
+        ],
+        "modalName": "raytracer",
+        "imgs": [
+            {"src": "cornell_32", "caption": "Cornell Box rendered with no extra effects"},
+            {"src": "cube_32_f_125_1", "caption": "Cube rendered with depth of field"},
+            {"src": "stacks_32_g", "caption": "Stacks rendered with diffuse reflection"}
+        ]
+    },
+    {
+        "name": "Space Race",
+        "dates": "June - July 2014",
+        "color": "#f44366",
+        "description": [
+            "Real-time competitive action game",
+            "Written in Javascript with a node backend, based on a Box2D physics engine"
+        ]
+    },
+    {
+        "name": "OCR Translator",
+        "dates": "November - December 2013",
+        "color": "#2196f3",
+        "description": [
+            "Term project for 15-112: Fund. of Programming and CS",
+            "Implemented a basic Optical Character Recognition algorithm for reading and translating signs in foreign languages",
+            "Written in Python with the OpenCV library"
+        ]
+    }
+]

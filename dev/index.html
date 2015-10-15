@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lukas Peraza</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body ng-app="mainPage">
+    <header>
+        <div ng-controller="appBarController as appBar">
+            <nav-bar pos-class="notFixed" nav-hide="hidden"></nav-bar>
+            <nav-bar pos-class="fixed" nav-hide="hidden"></nav-bar>
+        </div>
+    </header>
+    <main>
+        <div class="red">
+            <div class="container">
+                <h4 class="center-align">
+                    Disclaimer: This version of my website may be incomplete. Go to
+                    the <a href="/">main page</a> for the complete version.
+                </h4>
+            </div>
+        </div>
+        <about-me></about-me>
+        <experience></experience>
+        <projects></projects>
+        <skills></skills>
+        <education></education>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row" ng-controller="footerController as footCtrl">
+                <div class="col s4 m4 center-align" ng-repeat="li in footCtrl.lis">
+                    <a ng-href="{{ li.href }}">
+                        <img ng-src="/img/icons/{{ li.img }}" width="30px" height="30px"><br>
+                        <span class="white-text">{{ li.text }}</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center-align">
+                &copy; 2015 Lukas Peraza
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/httpNoCache.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/appbar.js"></script>
+</body>
+</html>

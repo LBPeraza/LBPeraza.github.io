@@ -1,0 +1,32 @@
+[
+    {
+        "name": "About",
+        "icon": "person",
+        "iColor": "blue-text",
+        "href": "about"
+    },
+    {
+        "name": "Experience",
+        "icon": "history",
+        "iColor": "green-text text-accent-3",
+        "href": "work"
+    },
+    {
+        "name": "Projects",
+        "icon": "work",
+        "iColor": "yellow-text",
+        "href": "proj"
+    },
+    {
+        "name": "Skills",
+        "icon": "star",
+        "iColor": "orange-text",
+        "href": "skills"
+    },
+    {
+        "name": "Education",
+        "icon": "school",
+        "iColor": "red-text",
+        "href": "edu"
+    }
+]

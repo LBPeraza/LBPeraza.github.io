@@ -1,0 +1,22 @@
+
+.section {
+    margin: 0;
+    padding: 0;
+    .header {
+        
+        @extend .white-text;
+        @extend .valign-wrapper;
+        @extend .z-depth-1;
+        background: $primary-color;
+        // min-height: 10vh;
+
+        .header-content {
+            @extend .container;
+            @extend .valign;
+        }
+    }
+
+    .content {
+        @extend .container;
+    }
+}

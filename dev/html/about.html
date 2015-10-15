@@ -1,0 +1,25 @@
+<div class="section scrollspy">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="container valign-wrapper" style="height:60vh;">
+                    <div class="valign">
+                        <h3 class="grey-text text-darken-2">{{aboutCtrl.header}}</h3>
+                        <blockquote ng-repeat="li in aboutCtrl.lis" style="margin: 0; padding-top: 10px; padding-bottom: 10px;" class="valign-wrapper">
+                            <i class="material-icons" style="font-size: 30px;">
+                                {{li.icon}}
+                            </i>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a ng-if="li.href" ng-href="{{li.href}}">
+                                {{li.text}}
+                            </a>
+                            <span ng-if="!li.href" class="valign">
+                                {{li.text}}
+                            </span>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

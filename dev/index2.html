@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lukas Peraza</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body ng-app="mainPage">
+    <header>
+        <div ng-controller="appBarController as appBar">
+            <nav-bar pos-class="notFixed"></nav-bar>
+            <nav-bar pos-class="fixed"></nav-bar>
+        </div>
+    </header>
+    <main>
+        <about-me></about-me>
+        <!-- <div class="divider"></div> -->
+        <experience></experience>
+        <!-- <div class="divider"></div> -->
+        <projects></projects>
+        <skills></skills>
+        <education></education>
+        <!-- <div class="section" id="work">
+            <p>Etiam vestibulum risus posuere tellus vulputate, at blandit arcu ultricies. Donec vitae leo a dui sollicitudin ornare. Quisque accumsan libero libero, non aliquam sapien venenatis a. Phasellus maximus id purus id sodales. Donec fermentum massa sed felis egestas gravida. Duis turpis purus, feugiat ac molestie in, consequat ac mi. Aliquam volutpat sem justo, id vestibulum mi molestie dignissim. Proin mollis in ante a hendrerit. Curabitur varius, purus id blandit suscipit, est ipsum sagittis neque, sed dignissim enim risus quis ligula. Etiam id vulputate lacus. Ut feugiat lectus arcu, eget bibendum mi consectetur tincidunt. Proin sed elit sodales, iaculis elit nec, accumsan orci.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim diam egestas purus ultricies sagittis. Ut condimentum ligula sed lacus malesuada hendrerit. Vivamus at turpis cursus, finibus velit sit amet, scelerisque lacus. Nam dignissim tortor at nunc consectetur rhoncus vel in nisi. Cras posuere arcu in consectetur tincidunt. Phasellus tempor ligula nec felis sagittis, vitae suscipit erat hendrerit. Nam consequat felis aliquam urna finibus sodales. Maecenas hendrerit libero vel felis faucibus dignissim. Sed non feugiat erat. Curabitur nulla sem, ultricies eu sem quis, laoreet semper mi. Fusce mattis ante in risus rutrum suscipit. Sed lacinia erat porta interdum eleifend. Proin volutpat viverra condimentum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim diam egestas purus ultricies sagittis. Ut condimentum ligula sed lacus malesuada hendrerit. Vivamus at turpis cursus, finibus velit sit amet, scelerisque lacus. Nam dignissim tortor at nunc consectetur rhoncus vel in nisi. Cras posuere arcu in consectetur tincidunt. Phasellus tempor ligula nec felis sagittis, vitae suscipit erat hendrerit. Nam consequat felis aliquam urna finibus sodales. Maecenas hendrerit libero vel felis faucibus dignissim. Sed non feugiat erat. Curabitur nulla sem, ultricies eu sem quis, laoreet semper mi. Fusce mattis ante in risus rutrum suscipit. Sed lacinia erat porta interdum eleifend. Proin volutpat viverra condimentum.</p>
+
+        </div>
+        <div class="divider"></div>
+        <div class="section" id="proj">
+            <p>Etiam id pretium nibh, eget egestas sapien. Nam elementum sapien et volutpat ornare. Pellentesque et ex augue. Donec mi mauris, bibendum sed eleifend quis, sodales non nisl. Suspendisse placerat mauris ac leo feugiat euismod sit amet a ipsum. Vestibulum eget ligula sed nibh fringilla ultrices a ac nunc. Donec non lorem purus.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim diam egestas purus ultricies sagittis. Ut condimentum ligula sed lacus malesuada hendrerit. Vivamus at turpis cursus, finibus velit sit amet, scelerisque lacus. Nam dignissim tortor at nunc consectetur rhoncus vel in nisi. Cras posuere arcu in consectetur tincidunt. Phasellus tempor ligula nec felis sagittis, vitae suscipit erat hendrerit. Nam consequat felis aliquam urna finibus sodales. Maecenas hendrerit libero vel felis faucibus dignissim. Sed non feugiat erat. Curabitur nulla sem, ultricies eu sem quis, laoreet semper mi. Fusce mattis ante in risus rutrum suscipit. Sed lacinia erat porta interdum eleifend. Proin volutpat viverra condimentum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim diam egestas purus ultricies sagittis. Ut condimentum ligula sed lacus malesuada hendrerit. Vivamus at turpis cursus, finibus velit sit amet, scelerisque lacus. Nam dignissim tortor at nunc consectetur rhoncus vel in nisi. Cras posuere arcu in consectetur tincidunt. Phasellus tempor ligula nec felis sagittis, vitae suscipit erat hendrerit. Nam consequat felis aliquam urna finibus sodales. Maecenas hendrerit libero vel felis faucibus dignissim. Sed non feugiat erat. Curabitur nulla sem, ultricies eu sem quis, laoreet semper mi. Fusce mattis ante in risus rutrum suscipit. Sed lacinia erat porta interdum eleifend. Proin volutpat viverra condimentum.</p>
+
+        </div>
+        <div class="divider"></div>
+        <div class="section" id="skills">
+            <p>Maecenas et aliquet nulla. Suspendisse sollicitudin venenatis eros eget dictum. Nulla cursus nisl in quam pellentesque pretium. Donec consectetur lectus in augue porta elementum ut hendrerit massa. Cras eget eros condimentum, condimentum eros dictum, convallis velit. Aenean tincidunt magna quis vehicula porttitor. Ut quis vehicula quam, a sagittis lorem. Sed posuere tincidunt tortor, in varius purus luctus eu. Praesent nec diam ex. Pellentesque at lectus sit amet sem posuere venenatis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim diam egestas purus ultricies sagittis. Ut condimentum ligula sed lacus malesuada hendrerit. Vivamus at turpis cursus, finibus velit sit amet, scelerisque lacus. Nam dignissim tortor at nunc consectetur rhoncus vel in nisi. Cras posuere arcu in consectetur tincidunt. Phasellus tempor ligula nec felis sagittis, vitae suscipit erat hendrerit. Nam consequat felis aliquam urna finibus sodales. Maecenas hendrerit libero vel felis faucibus dignissim. Sed non feugiat erat. Curabitur nulla sem, ultricies eu sem quis, laoreet semper mi. Fusce mattis ante in risus rutrum suscipit. Sed lacinia erat porta interdum eleifend. Proin volutpat viverra condimentum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim diam egestas purus ultricies sagittis. Ut condimentum ligula sed lacus malesuada hendrerit. Vivamus at turpis cursus, finibus velit sit amet, scelerisque lacus. Nam dignissim tortor at nunc consectetur rhoncus vel in nisi. Cras posuere arcu in consectetur tincidunt. Phasellus tempor ligula nec felis sagittis, vitae suscipit erat hendrerit. Nam consequat felis aliquam urna finibus sodales. Maecenas hendrerit libero vel felis faucibus dignissim. Sed non feugiat erat. Curabitur nulla sem, ultricies eu sem quis, laoreet semper mi. Fusce mattis ante in risus rutrum suscipit. Sed lacinia erat porta interdum eleifend. Proin volutpat viverra condimentum.</p>
+
+        </div>
+        <div class="divider"></div>
+        <div class="section" id="edu">
+            <p>Aenean aliquam enim non augue pulvinar sollicitudin. Fusce ornare posuere dui, quis bibendum velit dignissim et. Maecenas tincidunt justo vel leo gravida, id accumsan purus consequat. Fusce nec urna feugiat, iaculis nisl eu, maximus ipsum. In quis dui ornare, eleifend libero vitae, imperdiet est. Pellentesque dignissim eleifend vestibulum. Quisque euismod metus vitae tincidunt convallis. Donec at vestibulum eros. Mauris id iaculis odio. Etiam consectetur eleifend lectus ac placerat. Aliquam erat volutpat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim diam egestas purus ultricies sagittis. Ut condimentum ligula sed lacus malesuada hendrerit. Vivamus at turpis cursus, finibus velit sit amet, scelerisque lacus. Nam dignissim tortor at nunc consectetur rhoncus vel in nisi. Cras posuere arcu in consectetur tincidunt. Phasellus tempor ligula nec felis sagittis, vitae suscipit erat hendrerit. Nam consequat felis aliquam urna finibus sodales. Maecenas hendrerit libero vel felis faucibus dignissim. Sed non feugiat erat. Curabitur nulla sem, ultricies eu sem quis, laoreet semper mi. Fusce mattis ante in risus rutrum suscipit. Sed lacinia erat porta interdum eleifend. Proin volutpat viverra condimentum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim diam egestas purus ultricies sagittis. Ut condimentum ligula sed lacus malesuada hendrerit. Vivamus at turpis cursus, finibus velit sit amet, scelerisque lacus. Nam dignissim tortor at nunc consectetur rhoncus vel in nisi. Cras posuere arcu in consectetur tincidunt. Phasellus tempor ligula nec felis sagittis, vitae suscipit erat hendrerit. Nam consequat felis aliquam urna finibus sodales. Maecenas hendrerit libero vel felis faucibus dignissim. Sed non feugiat erat. Curabitur nulla sem, ultricies eu sem quis, laoreet semper mi. Fusce mattis ante in risus rutrum suscipit. Sed lacinia erat porta interdum eleifend. Proin volutpat viverra condimentum.</p>
+
+        </div> -->
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div clas="row">
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center-align">
+                Lukas Peraza 2015
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/appbar.js"></script>
+    
+</body>
+</html>

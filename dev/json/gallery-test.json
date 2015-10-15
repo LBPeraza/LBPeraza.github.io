@@ -1,0 +1,19 @@
+[
+    {
+        "name": "Volunteer-Log",
+        "imgs": [
+            {"src": "projects/volunteer-login", "caption": "Log-in page"},
+            {"src": "projects/volunteer-clock", "caption": "Material time selector"},
+            {"src": "projects/volunteer-admin", "caption": "Administrator's view. Allows for editing volunteer info, adding new volunteers, etc."},
+            {"src": "projects/volunteer-table", "caption": "Example yearly report"}
+        ]
+    },
+    {
+        "name": "Raytracer",
+        "imgs": [
+            {"src": "projects/cornell_32", "caption": "Cornell Box rendered with no extra effects"},
+            {"src": "projects/cube_32_f_125_1", "caption": "Cube rendered with depth of field"},
+            {"src": "projects/stacks_32_g", "caption": "Stacks rendered with diffuse reflection"}
+        ]
+    }
+]

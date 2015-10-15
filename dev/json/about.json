@@ -1,0 +1,20 @@
+{
+    "header": "Lukas Peraza",
+    "lis": [
+        {
+            "text": "(614) 557-8931",
+            "icon": "phone",
+            "href": "tel:16145578931"
+        },
+        {
+            "text": "lukas@lukasperaza.com",
+            "icon": "email",
+            "href": "mailto:lukas@lukasperaza.com?Subject=Hi%20Lukas!"
+        },
+        {
+            "text": "Resume",
+            "icon": "turned_in_not",
+            "href": "/resume_LukasPeraza.pdf"
+        }
+    ]
+}
