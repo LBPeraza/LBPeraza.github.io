@@ -1,49 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Lukas Peraza</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/073550cf93.js" crossorigin="anonymous"></script>
 </head>
-<body ng-app="mainPage">
-    <header>
-        <div ng-controller="appBarController as appBar">
-            <nav-bar pos-class="notFixed" nav-hide="hidden"></nav-bar>
-            <nav-bar pos-class="fixed" nav-hide="hidden"></nav-bar>
-        </div>
-    </header>
-    <main>
-        <about-me></about-me>
-        <experience></experience>
-        <projects></projects>
-        <skills></skills>
-        <education></education>
-    </main>
-    <footer class="page-footer">
+
+<body>
+    <div class="d-flex align-items-center" style="height: 100vh">
         <div class="container">
-            <div class="row" ng-controller="footerController as footCtrl">
-                <div class="col s4 m4 center-align" ng-repeat="li in footCtrl.lis">
-                    <a ng-href="{{ li.href }}">
-                        <img ng-src="/img/icons/{{ li.img }}" width="30px" height="30px"><br>
-                        <span class="white-text">{{ li.text }}</span>
-                    </a>
-                </div>
-            </div>
+            <h1>Lukas Peraza</h1>
+            <p>Software Engineer</p>
+            <a class="btn btn-lg" href="https://github.com/LBPeraza" target="_blank"
+            data-bs-toggle="tooltip" data-bs-placement="bottom" title="LBPeraza">
+                <span class="fa-brands fa-github" />
+            </a>
+            <a class="btn btn-lg" href="https://www.linkedin.com/in/lukasperaza/" target="_blank"
+            data-bs-toggle="tooltip" data-bs-placement="bottom" title="lukasperaza">
+                <span class="fa-brands fa-linkedin" />
+            </a>
+            <a class="btn btn-lg" href="mailto:lukas@lukasperaza.com"
+            data-bs-toggle="tooltip" data-bs-placement="bottom" title="lukas@lukasperaza.com">
+                <span class="fa-solid fa-envelope" />
+            </a>
         </div>
-        <div class="footer-copyright">
-            <div class="container center-align">
-                &copy; 2015 Lukas Peraza
-            </div>
-        </div>
-    </footer>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="js/httpNoCache.min.js"></script>
-    <script src="js/appbar.min.js"></script>
-    <script src="js/gallery.min.js"></script>
-    <script src="js/app.min.js"></script>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 </body>
+
 </html>
